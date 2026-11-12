@@ -1,0 +1,44 @@
+/* ==========================================================
+   TOKENS — แก้สีและฟอนต์ที่ไฟล์นี้ที่เดียว (editable template)
+   ชุดสีนี้เลือกให้ตรงกับสไลด์ปาฐกถา VCAC 2026
+   ========================================================== */
+@font-face{font-family:'Noto Sans Thai';src:url('../fonts/NotoSansThai-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:'Noto Sans Thai';src:url('../fonts/NotoSansThai-SemiBold.ttf') format('truetype');font-weight:500 600;font-display:swap}
+@font-face{font-family:'Noto Sans Thai';src:url('../fonts/NotoSansThai-Bold.ttf') format('truetype');font-weight:700 900;font-display:swap}
+
+:root{
+  /* สีหลัก 4 สี */
+  --navy:#0B1F4B;
+  --blue:#1B3FA6;
+  --green:#1F7A4D;
+  --red:#C62828;
+
+  /* สีเดียวกันที่ปรับความสว่าง สำหรับพื้นหลังเข้ม */
+  --navy-lt:#9DB1E0;
+  --blue-lt:#86A1F5;
+  --green-lt:#6FD6A3;
+  --red-lt:#FF8F86;
+
+  /* กลาง */
+  --ink:#16213A;
+  --muted:#5B6678;
+  --line:#D5DBE6;
+  --paper:#F4F7FB;
+  --paper-2:#E8EEF7;
+  --white:#FFFFFF;
+  --grid:#E1E8F2;
+
+  /* ฟอนต์ */
+  --font:'Noto Sans Thai','Noto Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+
+  /* การจับคู่ "มุมมองคุณค่า" (lens) กับสี */
+  --c-revenue:var(--green);   --c-revenue-lt:var(--green-lt);
+  --c-talent:var(--blue);     --c-talent-lt:var(--blue-lt);
+  --c-ip:var(--red);          --c-ip-lt:var(--red-lt);
+  --c-events:var(--navy);     --c-events-lt:var(--navy-lt);
+  --c-trust:var(--muted);     --c-trust-lt:#B7C0D0;
+
+  /* ระยะและรัศมี */
+  --r:6px;
+  --wrap:1180px;
+}

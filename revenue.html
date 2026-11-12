@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="แบบจำลองช่องทางรายได้และวงจรแบ่งปันผลประโยชน์ 30–40% ที่ปรับตัวแปรได้">
+<title>ช่องทางรายได้และวงจรแบ่งปัน</title>
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/revenue.css">
+</head>
+<body data-page="revenue">
+<header id="site-header"></header>
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <h1>เงินไหลไปไหน เมื่อข้อมูลสร้างรายได้</h1>
+      <p class="lead">เจ็ดช่องทางรายได้ไหลรวมกันเป็นก้อนเดียว แล้วแบ่งตามกติกา เฉพาะรายได้ที่ใช้ข้อมูลหรือ IP ของแพลตฟอร์มเท่านั้นที่ต้องแบ่ง 30–40% กลับสู่เจ้าของข้อมูลและงานวิจัย ลองปรับตัวเลขด้านขวา</p>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="split">
+      <div>
+        <div class="dark sankey">
+          <svg id="sk" viewBox="0 0 1000 600" role="img" aria-label="แผนภาพการไหลของรายได้จากเจ็ดช่องทางสู่ผู้รับ"></svg>
+        </div>
+        <p class="small muted note">ตัวเลขทั้งหมดเป็น "หน่วยสมมติ" เพื่อสาธิตกลไก ไม่ใช่ประมาณการรายได้ สีเขียวคือรายได้ที่เข้าเกณฑ์แบ่งปัน สีน้ำเงินคือรายได้ที่ผู้พัฒนาเก็บไว้เต็มจำนวน</p>
+      </div>
+      <aside class="ctrl" aria-label="ตัวแปรของแบบจำลอง">
+        <h3>สถานการณ์ตั้งต้น</h3>
+        <div class="seg light" id="presets" role="group" aria-label="สถานการณ์ตั้งต้น"></div>
+        <h3 class="gap">เกณฑ์แบ่งปัน</h3>
+        <div class="row2">
+          <label for="bs">สัดส่วนที่หมุนกลับ</label><output id="bsv"></output>
+          <input type="range" id="bs" min="30" max="40" step="1" value="35" style="--thumb:var(--green)">
+        </div>
+        <div class="row2">
+          <label for="split">ส่วนของเจ้าของข้อมูล/โรงพยาบาล</label><output id="spv"></output>
+          <input type="range" id="split" min="0" max="100" step="5" value="50" style="--thumb:var(--green)">
+        </div>
+        <p class="small muted">ช่วง 30–40% มาจากแผนยุทธศาสตร์และถอดเสียง ส่วนการแบ่งระหว่างเจ้าของข้อมูลกับมหาวิทยาลัยเป็นข้อสมมติเพื่อสาธิต</p>
+        <h3 class="gap">รายได้แต่ละช่องทาง</h3>
+        <div id="sliders"></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>อ่านผลจากตัวเลขที่ตั้งไว้</h2>
+      <div class="read" id="read" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>ช่องทางรายได้ทั้งเจ็ด</h2>
+      <p class="intro">ใครเป็นผู้จ่าย และข้อมูลนี้มาจากแหล่งใด วางเมาส์ที่แท่งด้านซ้ายของแผนภาพเพื่อไฮไลต์แถวในตาราง</p>
+      <div class="scroll-x"><table class="t" id="streamtable">
+        <thead><tr><th>ช่องทาง</th><th>ผู้จ่าย</th><th>ตัวอย่าง</th><th>ที่มา</th></tr></thead><tbody></tbody>
+      </table></div>
+    </div>
+  </section>
+</main>
+<footer id="site-footer"></footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/pages/revenue.js"></script>
+</body>
+</html>

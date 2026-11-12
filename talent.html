@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="พีระมิดความเป็นเลิศ 3 ระดับ เรดาร์ทักษะ เส้นทางจากปริญญาสู่ spin-off และตำแหน่งงานใหม่">
+<title>บุคลากร: จากปริญญาสู่ผู้ประกอบการ</title>
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/talent.css">
+</head>
+<body data-page="talent">
+<header id="site-header"></header>
+<main>
+  <section class="page-head">
+    <div class="wrap">
+      <h1>มาตรฐานสากลเป็นฐาน ไม่ใช่เพดาน</h1>
+      <p class="lead">คนคือสินทรัพย์ที่เก็บค่าตอบแทนได้นานที่สุดของแผนนี้ เลือกแต่ละระดับของพีระมิดเพื่อดูว่าทักษะเปลี่ยนไปอย่างไร และคนระดับนั้นป้อนคุณค่าอะไรให้ระบบ</p>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="split">
+      <div class="dark pyr">
+        <div class="pyr-grid">
+          <svg id="pyr" viewBox="0 0 420 380" role="img" aria-label="พีระมิดสามระดับ"></svg>
+          <svg id="radar" viewBox="0 0 520 400" role="img" aria-label="เรดาร์ทักษะ 6 ด้านของแต่ละระดับ"></svg>
+        </div>
+        <p class="small muted pad">เรดาร์แสดงความเข้มข้นเชิงแนวคิด 0–5 ของทักษะแต่ละด้าน เพื่อเปรียบเทียบสามระดับ ไม่ใช่คะแนนที่วัดจริง เส้นจางคือระดับก่อนหน้า</p>
+      </div>
+      <aside class="side" id="lvl" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>เส้นทางของคนหนึ่งคน</h2>
+      <p class="intro">จากบัณฑิตใหม่สู่เจ้าของธุรกิจ deep tech หกจุดแวะ กดเล่นหรือคลิกแต่ละจุดเพื่อดูว่าที่นั่นได้อะไร และป้อนคุณค่าให้ส่วนไหนของระบบ</p>
+      <div class="dark path-panel">
+        <div class="path-bar">
+          <button class="btn ghost" id="play" type="button" aria-pressed="false">เล่น</button>
+          <input type="range" id="step" min="0" max="5" step="1" value="0" aria-label="เลือกจุดแวะ" style="--thumb:var(--blue-lt)">
+        </div>
+        <svg id="path" viewBox="0 0 1000 210" role="img" aria-label="เส้นทางหกจุดแวะของบุคลากร"></svg>
+        <div class="skills" id="skills" aria-live="polite"></div>
+      </div>
+      <div class="stepinfo" id="stepinfo" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>ตำแหน่งใหม่ที่แผนนี้ต้องการ</h2>
+      <p class="intro">จุดสีบอกว่าตำแหน่งนั้นป้อนคุณค่าหลักให้ส่วนไหน ตำแหน่งของ Siam Medica และ Siam Terra อ้างจากแถว Talents ในสไลด์ ส่วน Siam Silica เป็นข้อเสนอที่สรุปจากหัวข้อเทคโนโลยีในสไลด์</p>
+      <div class="seg light" id="flag" role="group" aria-label="กรองตามธง"></div>
+      <div class="lenskey" id="lenskey"></div>
+      <ul class="roles" id="roles"></ul>
+    </div>
+  </section>
+</main>
+<footer id="site-footer"></footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/pages/talent.js"></script>
+</body>
+</html>

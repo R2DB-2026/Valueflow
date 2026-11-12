@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="แบบจำลองเชิงโต้ตอบของการส่งต่อคุณค่า ทั้งรายได้ บุคลากร ทรัพย์สินทางปัญญา และกิจกรรม ต่อยอดปาฐกถา VCAC 2026">
+<title>ภาพรวมการไหลของคุณค่า</title>
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/home.css">
+</head>
+<body data-page="index">
+<header id="site-header"></header>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <h1>คุณค่าไหลจากข้อมูลหน้างาน<br>ไปเป็นรายได้ คน และทรัพย์สินทางปัญญาอย่างไร</h1>
+      <p class="lead">แผนที่เดียวของห่วงโซ่ห้าขั้นที่ต่อยอดปาฐกถา VCAC 2026 เลือกมุมมองด้านล่างเพื่อดูว่าอะไรไหลผ่านแต่ละขั้น และอะไรไหลกลับ</p>
+      <div class="seg light" id="lens" role="group" aria-label="เลือกมุมมองของคุณค่า"></div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="dark hero-panel" id="panel">
+      <svg id="flow" viewBox="0 78 1000 312" role="img" aria-labelledby="flow-t flow-d">
+        <title id="flow-t">แผนภาพการไหลของคุณค่าห้าขั้น</title>
+        <desc id="flow-d">จากข้อมูลและตัวอย่าง ผ่านธรรมาภิบาล แพลตฟอร์มค้นพบ ผลิตภัณฑ์ ไปสู่ตลาดและทุน แล้วไหลกลับสู่ต้นทาง</desc>
+      </svg>
+      <div class="captions" id="captions" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>อ่านแผนภาพนี้อย่างไร</h2>
+      <div class="howto">
+        <div><h3>เส้นขาวคือห่วงโซ่</h3><p>ข้อมูลหน้างานผ่านกติกา แพลตฟอร์ม ผลิตภัณฑ์ และตลาด ทุกขั้นมีผู้เล่นต่างกัน แต่ใช้มาตรฐานเดียวกัน</p></div>
+        <div><h3>จุดที่วิ่งคือคุณค่า</h3><p>สีของจุดเปลี่ยนตามมุมมองที่เลือก เช่น เงินเป็นสีเขียว คนเป็นสีน้ำเงิน ทรัพย์สินทางปัญญาเป็นสีแดง</p></div>
+        <div><h3>เส้นแดงข้างล่างคือหัวใจ</h3><p>รายได้ไหลกลับตามกติกาแบ่งปัน (30–40% ของรายได้ที่มาจากข้อมูลและ IP) ทำให้ระบบหมุนต่อได้โดยไม่ต้องพึ่งงบรัฐอย่างเดียว</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>เจาะลึกทีละด้าน</h2>
+      <p class="intro">แต่ละหน้าเล่นกับตัวแปรจริงได้ ปรับสัดส่วน กรองผู้เล่น หรือกดเล่นไทม์ไลน์</p>
+      <nav class="navrows" id="rows" aria-label="หน้าเนื้อหา"></nav>
+    </div>
+  </section>
+</main>
+<footer id="site-footer"></footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/core.js"></script>
+<script src="assets/js/pages/index.js"></script>
+</body>
+</html>
